@@ -72,3 +72,6 @@ collaborate (see also: git help workflows)
 Ce este Git?
 Un sistem de gestionare a versiunilor fișierelor dintr-un dosar (numit și folder sau director). Altfel spus, un program care înregistrează fiecare modificare dintr-un dosar de-a lungul timpului, astfel încât utilizatorii acelui dosar pot să se întoarcă în orice punct din istoria dosarului sau pot analiza evoluția lui de-a lungul timpului. O funcție foarte importantă a Git este cea de „ramuri”, prin care istoria unui dosar poate evolua concomitent în mod diferit în mai multe „ramuri” (create cu „git checkout -b” sau cu „git branch”), și într-un moment ales acele ramuri pot fi unificate (cu comanda „git merge”) Ceea ce face Git cu adevărat folositor este funcția de „remote”-uri, adică servere pe care git încarcă întreaga istorie a unui dosar permițând colaborarea mai multor utilizatori asupra aceluiași dosar. Exemple de servicii care folosesc Git pentru a permite colaborarea utilizatorilor asupra unor proiecte sunt GitHub și BitBucket. GitHub este cel mai popular, dar BitBucket permite crearea unui număr nelimitat de depozite Git private.
 
+referinte
+http://clneagu.ro/gitrepo/
+
