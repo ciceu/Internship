@@ -1,0 +1,74 @@
+These are common Git commands used in various situations:
+# inițializare git repo
+git init
+
+# vizualizarea stării curente
+git status
+
+# adaugă toate fișierele, inclusiv din subdirectoare
+git add .
+
+# salvează toate modificările in baza de date locală
+git commit -a -m "scurt mesaj informativ" 
+
+Dacă dorim sincronizarea proiectului local cu un server extern putem
+folosi următoarele comenzi (ex: GitHub - folosiți propriul username
+în loc de clneagu și propriul proiect în loc de xxx.git):
+git remote add origin git@github.com:clneagu/xxx.git
+git push -u origin master
+
+
+În acest moment repo-ul local este conectat cu cel de pe serverul
+GitHub. De aici mai departe putem folosi următoarele comenzi pentru
+sincronizare dinspre și către server:
+
+# cere ultima versiune de pe server
+git pull
+
+# faceți toate modificările dorite
+
+# urmărește toate fișierele noi
+git add .
+
+# salvează toate modificările in baza de date locală
+git commit -a -m"mesaj informativ"
+
+# salvează pe server toate modificările locale
+git push
+
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+
+Ce este Git?
+Un sistem de gestionare a versiunilor fișierelor dintr-un dosar (numit și folder sau director). Altfel spus, un program care înregistrează fiecare modificare dintr-un dosar de-a lungul timpului, astfel încât utilizatorii acelui dosar pot să se întoarcă în orice punct din istoria dosarului sau pot analiza evoluția lui de-a lungul timpului. O funcție foarte importantă a Git este cea de „ramuri”, prin care istoria unui dosar poate evolua concomitent în mod diferit în mai multe „ramuri” (create cu „git checkout -b” sau cu „git branch”), și într-un moment ales acele ramuri pot fi unificate (cu comanda „git merge”) Ceea ce face Git cu adevărat folositor este funcția de „remote”-uri, adică servere pe care git încarcă întreaga istorie a unui dosar permițând colaborarea mai multor utilizatori asupra aceluiași dosar. Exemple de servicii care folosesc Git pentru a permite colaborarea utilizatorilor asupra unor proiecte sunt GitHub și BitBucket. GitHub este cel mai popular, dar BitBucket permite crearea unui număr nelimitat de depozite Git private.
+
